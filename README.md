@@ -14,6 +14,10 @@ Repository for Functional Programming course for 2nd year Computer Science
 
 **Structure and Interpretation of Computer Programs** е нещото, което силно препоръчваме :)
 
+## DrRacket
+
+Програма може да изтеглите от тук - http://racket-lang.org/
+
 ## Функционално Програмиране през 2013
 
 Полезен ресурс е курсът по функционално програмиране от миналата година, който се намира тук - https://github.com/IvanIvanov/fp2013
