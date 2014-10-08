@@ -22,11 +22,11 @@
 
 ### Примери:
 
-```
+```scheme
 > (product-of-digits 123)
 6
 > (product-of-digits 12345)
->120
+120
 > (product-of-digits 12355430)
 0
 ```
@@ -40,7 +40,7 @@
 Във файл `ordinals.scm` напишете функция със следната сигнатура:
 
 ```scheme
-(define (ordinals n))
+(define (ordinals n) ...)
 ```
 
 Функцията трябва да взима цяло число `n` и да върне низ (string), който да представлява ординалната стойност на числото в английски като string.
@@ -71,7 +71,7 @@
 
 ### Примери:
 
-```
+```scheme
 > (ordinals 1)
 "1st"
 > (ordinals 2)
@@ -109,13 +109,13 @@
 
 ### Примери
 
-```
+```scheme
 > (contains-digits? 111111 222)
-> #f
+#f
 > (contains-digits? 1111112 222)
-> #t
+#t
 > (contains-digits? 12345 123)
-> #t
+#t
 > (contains-digits? 0123 11111111111111111111111130)
-> #t
+#t
 ```
