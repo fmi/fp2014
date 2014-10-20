@@ -32,30 +32,42 @@
 (non-lychrel-sum 110 200) ;резултат 4844
 ```
 
-###Задача 2 - Power Series
-Използвайки функцията от по-висок ред `(accumulate op initial-value f a next b)` дефинирайте следните 3 функции:
- - `(fact x)`, която пресмята `x!`
-
- - `(sin-series x n)`, която пресмята развитието на функцията `sin x` в ред на Тейлър по формулата
- 
- ![sinx](https://www.dropbox.com/s/thjtlhcg3spusdv/gif.gif?dl=1)
-
- - `(cos-series x n)`, която пресмята развитието на функцията `cos x` в ред на Тейлър по формулата 
- 
- ![cosx](https://www.dropbox.com/s/b4hn2hw9emuco5z/gif%20%281%29.gif?dl=1)
-
+###Задача 2 - Factorial
+Използвайки функцията от по-висок ред `(accumulate op initial-value f a next b)` дефинирайте функция `(fact x)`, която пресмята стойността на `x!` 
 
 **Сигнатура:**
 
 ```scm
-(define (non-lychrel-sum a b) ...)
+(define (fact x) ...)
 ```
 
 **Примери:**
 
 ```scm
-(non-lychrel-sum 10 30) ;резултат 373
-(non-lychrel-sum 40 60) ;резултат 678
-(non-lychrel-sum 70 80) ;резултат 367
-(non-lychrel-sum 110 200) ;резултат 4844
+(fact 5) ;резултат 120
+(fact 10) ;резултат 3628800
+(fact 13) ;резултат 6227020800
 ```
+
+###Задача 3 - Power Series
+Използвайки функцията от по-висок ред `(accumulate op initial-value f a next b)` дефинирайте функция `(cosh-series x n)`, която пресмята развитието на функцията [cosh x](http://en.wikipedia.org/wiki/Hyperbolic_function) (хиперболичен косинус) в ред на Тейлър по формулата 
+
+ <p align="center">
+     <img src="http://i57.tinypic.com/2vwba8l.gif" />
+ </p>
+
+
+**Сигнатура:**
+
+```scm
+(define (cosh-series x n) ...)
+```
+
+**Примери:**
+
+```scm
+(cosh-series 0 100) ;резултат 1
+(cosh-series (/ pi 2) 100) ;резултат 2.50917
+(cosh-series pi 100) ;резултат 11.5919
+```
+**Забележка:** в някои версии на `DrRacket` константата `pi` не е дефинирана по подразбиране. Може да си я добавим като `(define pi 3.14159265)`
