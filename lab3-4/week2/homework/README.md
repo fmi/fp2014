@@ -20,13 +20,13 @@
 
 **Сигнатура:**
 
-```scm
+```scheme
 (define (non-lychrel-sum a b) ...)
 ```
 
 **Примери:**
 
-```scm
+```scheme
 (non-lychrel-sum 10 30) ;резултат 373
 (non-lychrel-sum 40 60) ;резултат 678
 (non-lychrel-sum 70 80) ;резултат 367
