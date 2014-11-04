@@ -16,13 +16,13 @@
 
 **Сигнатура:**
 
-```scm
+```scheme
 (define (goldbach x) ...)
 ```
 
 **Примери:**
 
-```scm
+```scheme
 (goldbach 28) ;резултат 5 - 28 = 5 + 23
 (goldbach 98) ;резултат 19 - 98 = 19 + 79
 (goldbach 8) ;резултат 3 - 8 = 3 + 5
@@ -39,13 +39,13 @@
 
 **Сигнатура:**
 
-```scm
+```scheme
 (define (pandigital? x) ...)
 ```
 
 **Примери:**
 
-```scm
+```scheme
 (pandigital? 13254) ;резултат #t
 (pandigital? 7623154) ;резултат #t
 (pandigital? 479121365831) ;резултат #t

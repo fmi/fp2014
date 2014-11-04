@@ -19,13 +19,13 @@
 
 **Сигнатура:**
 
-```scm
+```scheme
 (define (non-lychrel-sum a b) ...)
 ```
 
 **Примери:**
 
-```scm
+```scheme
 (non-lychrel-sum 10 30) ;резултат 373
 (non-lychrel-sum 40 60) ;резултат 678
 (non-lychrel-sum 70 80) ;резултат 367
@@ -37,13 +37,13 @@
 
 **Сигнатура:**
 
-```scm
+```scheme
 (define (fact x) ...)
 ```
 
 **Примери:**
 
-```scm
+```scheme
 (fact 5) ;резултат 120
 (fact 10) ;резултат 3628800
 (fact 13) ;резултат 6227020800
@@ -60,13 +60,13 @@
 
 **Сигнатура:**
 
-```scm
+```scheme
 (define (cosh-series x n) ...)
 ```
 
 **Примери:**
 
-```scm
+```scheme
 (cosh-series 0 100) ;резултат 1
 (cosh-series (/ pi 2) 100) ;резултат 2.50917
 (cosh-series pi 100) ;резултат 11.5919
