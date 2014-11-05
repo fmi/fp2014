@@ -67,13 +67,20 @@ s
 ### Примери
 
 ```scheme
-(suffix? (list 1 2 3) (list 4 5 6)) ;;; #f
-(suffix? (list 1 2 3) (list 4 5 6 1 2)) ;;;#f
-(suffix? (list 1 2 3) (list 4 5 6 1 2 3)) ;;; #t
-(suffix? (list) (list 4 5 6)) ;;; #t
-(suffix? (list 6) (list 4 5 6)) ;;; #t
-(suffix? (range 1 10) (range 1 10)) ;;; #t
-(suffix? (range 1 10) (range 1 11)) ;;; #f
+>(suffix? (list 1 2 3) (list 4 5 6))
+#f
+>(suffix? (list 1 2 3) (list 4 5 6 1 2))
+#f
+>(suffix? (list 1 2 3) (list 4 5 6 1 2 3))
+#t
+>(suffix? (list) (list 4 5 6))
+#t
+>(suffix? (list 6) (list 4 5 6))
+#t
+>(suffix? (range 1 10) (range 1 10))
+#t
+>(suffix? (range 1 10) (range 1 11))
+#f
 ```
 
 ## Задача 4
@@ -89,11 +96,16 @@ s
 ### Примери
 
 ```scheme
-(occurrences (list 1 2 3) (list 1 2 4 1)) ;;; (2 1 0)
-(occurrences (list 2 2 2) (list 0 5 6)) ;;; (0 0 0)
-(occurrences (list 2 2 2) (list 2 2 2 2 2 2 2 2 2 2 2 2)) ;;; (12 12 12)
-(occurrences (list) (list 2 2 2 2 2 2 2 2 2 2 2 2)) ;;; ()
-(occurrences (list 2 3 4) (list)) ;;; (0 0 0)
+>(occurrences (list 1 2 3) (list 1 2 4 1))
+(2 1 0)
+>(occurrences (list 2 2 2) (list 0 5 6))
+(0 0 0)
+>(occurrences (list 2 2 2) (list 2 2 2 2 2 2 2 2 2 2 2 2))
+(12 12 12)
+>(occurrences (list) (list 2 2 2 2 2 2 2 2 2 2 2 2))
+()
+>(occurrences (list 2 3 4) (list))
+(0 0 0)
 ```
 
 ### Задача 5
@@ -109,7 +121,10 @@ s
 **Примери:**
 
 ```scheme
-(digit-factorials 100) ;резултат (1 2)
-(digit-factorials 1000) ;резултат (1 2 145)
-(digit-factorials 50000) ;резултат (1 2 145 40585)
+> (digit-factorials 100)
+(1 2)
+> (digit-factorials 1000)
+(1 2 145)
+> (digit-factorials 50000)
+(1 2 145 40585)
 ```
