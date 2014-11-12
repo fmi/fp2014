@@ -23,23 +23,14 @@
 ### Примери
 
 ```scheme
-> (mult-matrices (list (list 1 2)
-                                (list 3 4))
-                         (list (list -3 -8 3)
-                                (list -2 1 4)))
+> (mult-matrices (list (list 1 2) (list 3 4))
+                             (list (list -3 -8 3) (list -2 1 4)))
 ((-7 -6 11) (-17 -20 25))
-> (mult-matrices (list
-                                (list 1 2 3)
-                                (list 4 5 6))
-                            (list
-                                (list 1 2 3)
-                                (list 4 5 6)))
+> (mult-matrices (list (list 1 2 3) (list 4 5 6))
+                             (list (list 1 2 3) (list 4 5 6)))
 #f
-> (mult-matrices (list
-                                (list 1 4 6))
-                            (list (list 2 3)
-                                   (list 5 8)
-                                   (list 7 9)))
+> (mult-matrices (list (list 1 4 6))
+                                    (list (list 2 3) (list 5 8) (list 7 9)))
 ((64 89))
 ```
 
