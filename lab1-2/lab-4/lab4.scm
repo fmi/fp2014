@@ -23,7 +23,7 @@
 (define (append-list list1 list2)
   (if (null? list1)
       list2
-      (cons (car list1) (append (cdr list1) list2))))
+      (cons (car list1) (append-list (cdr list1) list2))))
 
 (define (reverse-list list)
   (if (null? list)
