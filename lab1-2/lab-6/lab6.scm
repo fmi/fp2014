@@ -42,7 +42,7 @@
   (transpose-helper matrix 0))
 
 (define (transpose-helper matrix current)
-  (if (= current (length matrix))
+  (if (= current (length (car matrix)))
       '()
       (cons (column matrix current) (transpose-helper matrix (+ current 1)))))
 
