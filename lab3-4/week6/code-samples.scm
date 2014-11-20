@@ -61,7 +61,7 @@
 (define (transpose M)
   (map (lambda (index)
          (column index M))
-       (range 0 (- (length M) 1))))
+       (range 0 (- (length (car M)) 1))))
 
 (assert-equal? (list (list 1 4 7) (list 2 5 8) (list 3 6 9)) (transpose M))
 
