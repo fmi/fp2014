@@ -59,6 +59,8 @@
         (else (append (sort (filter (lambda (x) (< x (car items))) (cdr items)))
                                (list (car items))
                                (sort (filter (lambda (x) (>= x (car items))) (cdr items)))))))
+(define (glue-ints a b)
+  (+ (* a 10) b))
 
 (define (list->number l)
   (define (iter l result)
