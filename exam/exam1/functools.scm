@@ -88,3 +88,7 @@
 
 (define (zip l1 l2)
   (map (lambda (x y) (list x y)) l1 l2))
+
+(define (member? needle haystack)
+  (cond ((null? haystack) #f)
+        (else (or (= needle (car haystack)) (member? needle (cdr haystack))))))
