@@ -189,3 +189,25 @@ area a b c = sqrt (p * pa * pb * pc)
 
 * http://learnyouahaskell.com/introduction
 * http://learnyouahaskell.com/starting-out до списъци
+
+## Настройки за редактор
+
+Тъй като Haskell изисква специфичен синтаксис с табулации, е хубаво да си настроите вашият текстов редактор, така, че да ви помага.
+
+За Sublime, може да сложите следните language preferences, като:
+
+1. Отворите .hs файл и отидете на Preferences
+2. Oт там изберете `-> Settings More -> Syntax Specific - User`
+3. И сложете следните настройки:
+
+```json
+{
+        "draw_white_space": "all",
+        "tab_size": 4,
+        "translate_tabs_to_spaces": true
+}
+```
+
+Накратко - ще виждате всеки white space и един tab ще бъде 4 space-a.
+
+Освен това, може да си инсталирате следния Plugin - https://github.com/SublimeHaskell/SublimeHaskell
