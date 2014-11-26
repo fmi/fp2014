@@ -46,18 +46,18 @@ isPrime n
     | n <= 1 = False
     | otherwise = isPrime' 2 n
         where
-                isPrime' current n
-                    | current == n = True
-                    | mod n current == 0 = False
-                    | otherwise = isPrime' (current + 1) n
+            isPrime' current n
+                | current == n = True
+                | mod n current == 0 = False
+                | otherwise = isPrime' (current + 1) n
 
 area :: Double -> Double -> Double -> Double
 area a b c = sqrt (p * pa * pb * pc)
     where
-            p = (a + b + c) / 2
-            pa = p - a
-            pb = p - b
-            pc = p - c
+        p = (a + b + c) / 2
+        pa = p - a
+        pb = p - b
+        pc = p - c
 
 foodForPandas :: Int -> Int -> Int
 foodForPandas timeSpan pandaCount = totalFood
