@@ -5,6 +5,7 @@ last' [x] = x
 last' (x:xs) = last' xs
 
 last'' :: [a] -> Maybe a
+last'' [] = Nothing
 last'' [x] = Just x
 last'' (x:xs) = last'' xs
 
