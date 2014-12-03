@@ -2,7 +2,7 @@
 =========
 
 ###Разгледани теми
-- списъци, guards, pattern matching, ranges, lambda функции, Functors
+- списъци, guards, pattern matching, ranges, lambda функции
 
 ###Задачи
 - да се напише функция `last' :: [a] -> a`
