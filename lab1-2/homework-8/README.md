@@ -43,4 +43,7 @@ lengthEncode "aaaaaaaaaaaabbb" -> "12a3b"
 ```
 
 Може да се счита, че входът ще бъде коректен и ще съдържа само букви
-**Hint:** Може да използвате функцията (show)[http://hackage.haskell.org/package/base-4.7.0.1/docs/Prelude.html#v:show] за конвертиране на числа в низове
+
+**Hint:**
+
+Може да използвате функцията [show](http://hackage.haskell.org/package/base-4.7.0.1/docs/Prelude.html#v:show) за конвертиране на числа в низове
