@@ -48,3 +48,7 @@ scalarProduct xs ys = sum [x * y | (x,y) <- zip xs ys]
 
 replicate' :: Int -> a -> [a]
 replicate' n elem = [elem | x <- [1..n]]
+
+qsort :: (Ord a) => [a] -> [a]
+qsort [] = []
+qsort (x:xs) = qsort [y | y <- xs, y <= x] ++ [x] ++ qsort [z | z <- xs, z > x]
