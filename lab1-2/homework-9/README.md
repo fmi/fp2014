@@ -74,8 +74,24 @@ tdidf :: String -> String -> [String] -> Float
 **Примери:**
 
 ```haskell
-tfidf "the" "the quick brown fox jumps over the lazy dog" ["the quick brown fox jumps over the lazy dog", "the house is painted in white", "the project is falling behind schedule"] -> първият "документ" е "the quick brown fox jumps over the lazy dog". Думата "the" се среща 2 пъти в него, т.е. tf("the", "the quick brown fox jumps over the lazy dog") = 2. Думата "the" се среща в 2 от 3-те документа, които са подадени ["**the** quick brown fox jumps over **the** lazy dog", "**the** house is painted in white", "This project is falling behind schedule"], т.е. idf("the", D) = log_2 3/2 = 0.584 => tfidf(t, d, D) = 2 * 0.584 = 1.168
+tfidf "the" "the quick brown fox jumps over the lazy dog" ["the quick brown fox jumps over the lazy dog", "the house is painted in white", "the project is falling behind schedule"] -> 1.168
 ```
+Първият *документ* е 
+
+`the quick brown fox jumps over the lazy dog.`
+
+Думата *the* се среща `2` пъти в него, т.е.
+
+`tf("the", "the quick brown fox jumps over the lazy dog") = 2`
+
+Думата *the* се среща в `2` от `3`-те документа, които са подадени
+
+`["**the** quick brown fox jumps over **the** lazy dog", "**the** house is painted in white", "This project is falling behind schedule"]`
+
+![Latex](http://latex.codecogs.com/gif.latex?idf%28%22the%22%2C%20D%29%20%3D%20log_2%20%5Cfrac%7B3%7D%7B2%7D%20%3D%200.584)
+
+
+![Latex](http://latex.codecogs.com/gif.latex?tfidf%28t%2C%20d%2C%20D%29%20%3D%202%20*%200.584%20%3D%201.168)
 
 **Hint:**
-Използвайте предната задача и вградената функция logBase, за да пресметнете логаритъм при основа 2
+Използвайте предната задача и вградената функция `logBase`, за да пресметнете логаритъм при основа `2`
