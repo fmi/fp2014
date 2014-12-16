@@ -68,7 +68,7 @@ dictionary "The quick brown fox jumps over the lazy dog" -> [("the", 2), ("quick
 **Сигнатура:**
 
 ```haskell
-tdidf :: String -> String -> [String] -> Float
+tfidf :: String -> String -> [String] -> Float
 ```
 
 **Примери:**
