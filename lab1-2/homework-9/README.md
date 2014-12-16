@@ -74,7 +74,7 @@ tdidf :: String -> String -> [String] -> Float
 **Примери:**
 
 ```haskell
-tfidf "the" "the quick brown fox jumps over the lazy dog" ["the quick brown fox jumps over the lazy dog", "the house is painted in white", "the project is falling behind schedule"] -> 1.168
+tfidf "the" "the quick brown fox jumps over the lazy dog" ["the quick brown fox jumps over the lazy dog", "the house is painted in white", "This project is falling behind schedule"] -> 1.168
 ```
 Първият *документ* е 
 
