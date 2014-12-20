@@ -65,7 +65,14 @@ take n (x:xs) = x : take (n - 1) xs
 Тогава изразът `take 5 $ repeat 1` се оценява до:
 
 ```haskell
-take 5 $ repeat 1 =  1 : take 4 $ repeat 1 = 1 : 1 : take 3 $ repeat 1 = 1 : 1 : 1 : take 2 $ repeat 1 = 1 : 1 : 1 : 1 : take 1 $ repeat 1 = 1 : 1 : 1 : 1 : 1 : take 0 $ repeat 1 = 1 : 1 : 1 : 1 : 1 : [] = [1, 1, 1, 1, 0]
+take 5 $ repeat 1
+=  1 : take 4 $ repeat 1
+= 1 : 1 : take 3 $ repeat 1
+= 1 : 1 : 1 : take 2 $ repeat 1
+= 1 : 1 : 1 : 1 : take 1 $ repeat 1
+= 1 : 1 : 1 : 1 : 1 : take 0 $ repeat 1
+= 1 : 1 : 1 : 1 : 1 : []
+= [1, 1, 1, 1, 1]
 ```
 
 Haskell никога не пресмята целият израз на `repeat 1` а взима само поредната глава от безкрайния списък.
