@@ -40,3 +40,24 @@ take 10 primes -- [2,3,5,7,11,13,17,19,23,29]
 ```
 
 Отворете файла `streams.hs` и имплементирайте функциите, които са описани вътре :)
+
+### Задача 3
+
+Напишете функцията `split`, която има следната сигнатура:
+
+```haskell
+split :: String -> String -> [String]
+```
+
+* Първият аргумент е `delimiter`
+* Вторият е някакъв низ
+* функцията връща списък от всички части, след като разделим низа по `delimiter`
+
+Примеи:
+
+```haskell
+> split " " "Hello friend! How is your Haskell?"
+["Hello", "friend!", "How", "is", "your", "Haskell?"]
+> split "" "How should i split on empty string?"
+["How should i split on empty string?"]
+```
