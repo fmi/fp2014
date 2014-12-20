@@ -71,6 +71,8 @@ filter' pred xs = foldr decideFunction [] xs
             | otherwise = rest
 
 -- Имплементация на same
+-- (==x) е функция, която е същата като lambda израза (\y -> x == y )
+-- Написана съкратено
 same :: (Eq a) => [a] -> Bool
 same (x:xs) = all (==x) xs
 
