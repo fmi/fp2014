@@ -1,7 +1,3 @@
--- folds
--- безкрайни списъци
--- http://www.cs.nott.ac.uk/~gmh/fold.pdf
-
 -- fold left is like reduce / accumulate
 -- Строим израза при [a1, a2, a3, .., an] sv, oper:
 -- (oper ... (oper (oper (oper sv a1) a2) a3) ... an)
