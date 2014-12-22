@@ -1,5 +1,3 @@
-![header](http://www.freewebheaders.com/wordpress/wp-content/gallery/christmas/christmas-ornaments-decorations-web-header.jpg)
-
 Упражнение 12
 =========
 
