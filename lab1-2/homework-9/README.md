@@ -28,7 +28,7 @@ merge [1, 2] [3, 4] -> [1, 3, 2, 4]
 Решението да използва `list comprehension`
 
 ###Задача 2 - hamming distance
-Да се напише функция `hammingDistance :: String -> Int`, която пресмята [разстоянието по Хеминг](http://en.wikipedia.org/wiki/Hamming_distance) (брой различни символи) между 2 низа.
+Да се напише функция `hammingDistance :: String -> String -> Int`, която пресмята [разстоянието по Хеминг](http://en.wikipedia.org/wiki/Hamming_distance) (брой различни символи) между 2 низа.
 
 
 **Сигнатура:**

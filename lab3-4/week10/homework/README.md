@@ -40,6 +40,9 @@ __Подсказка__
 `import Data.List` ще ви даде `sort` функцията
 `import Data.Char` Ще ви даде `toLower` функцията
 
+
+Ако има две букви с една и съща бройка, резултатът е тази, която идва по-рано в азбуката. Тоест - лексикографската подредба определя резултата при равна бройка.
+
 ### Сигнатура
 
 ```Haskell
@@ -50,6 +53,6 @@ letterOfTheMost :: [String] -> (Char, Int)
 
 ```Haskell
 letterOfTheMost ["haskell", "javascript", "scheme", "C++", "Clojure", "C++"] -- ('c',5)
-letterOfTheMost $ words "The quick brown fox jumped over the lazy dog" -- ('o',4)
+letterOfTheMost $ words "The quick brown fox jumped over the lazy dog" -- ('e',4)
 letterOfTheMost ["aaaaaaaaa", "bbbbbbb", "cccccccccc", "dddddddddddd"] -- ('d',12)
 ```
