@@ -64,26 +64,12 @@ convert x ((y,z):xs)
     | x == y = z
     | otherwise = convert x xs
 
-intersection :: (Eq a) => [a] -> [a] -> [a]
-intersection _ [] = []
-intersection [] _ = []
-intersection (x:xs) list
-    | elem x list = x:(intersection xs list)
-    | otherwise = intersection xs list
-
 union :: (Eq a) => [a] -> [a] -> [a]
 union x [] = x
 union [] x = x
 union (x:xs) list
     | elem x list = union xs list
     | otherwise = x:(union xs list)
-
-difference :: (Eq a) => [a] -> [a] -> [a]
-difference x [] = x
-difference [] x = []
-difference (x:xs) list
-    | elem x list = difference xs list
-    | otherwise = x:(difference xs list)
 
 uniq :: (Eq a) => [a] -> [a]
 uniq [] = []
