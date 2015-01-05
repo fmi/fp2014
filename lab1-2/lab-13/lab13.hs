@@ -64,13 +64,6 @@ convert x ((y,z):xs)
     | x == y = z
     | otherwise = convert x xs
 
-union :: (Eq a) => [a] -> [a] -> [a]
-union x [] = x
-union [] x = x
-union (x:xs) list
-    | elem x list = union xs list
-    | otherwise = x:(union xs list)
-
 uniq :: (Eq a) => [a] -> [a]
 uniq [] = []
 uniq (x:xs)
