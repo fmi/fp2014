@@ -8,11 +8,6 @@ increasing f a b
     | a + 1 < b = (f a < f(a + 1)) && (increasing f (a + 1) b)
     | otherwise = True
 
-numberLength :: Int -> Int
-numberLength x
-    | x < 10 = 1
-    | otherwise = 1 + numberLength (div x 10)
-
 listToNumber :: [Int] -> Int
 listToNumber list = listToNumberHelper $ reverse list
 
