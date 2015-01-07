@@ -166,11 +166,11 @@ If number is divisible by 5, add `and eggs` to the result.
 
 For example:
 
-```
+```haskell
 prepareMeal 5
 "eggs"
 prepareMeal 15
-"spam and eggs"'
+"spam and eggs"
 prepareMeal 45
 "spam spam and eggs"
 ```
