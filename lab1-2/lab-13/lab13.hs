@@ -16,12 +16,9 @@ listToNumberHelper [] = 0
 listToNumberHelper (x:xs) = x + 10 * (listToNumberHelper xs)
 
 numberToList :: Int -> [Int]
-numberToList x = reverse $ numberToListHelper x
-
-numberToListHelper :: Int -> [Int]
-numberToListHelper x
+numberToList x
     | x < 10 = [x]
-    | otherwise = [rem x 10] ++ numberToListHelper(div x 10)
+    | otherwise = numberToListHelper(div x 10) ++ [rem x 10]
 
 zeroInsert :: Int -> Int
 zeroInsert x = listToNumber $ zeroInsertHelper $ numberToList x
