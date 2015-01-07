@@ -58,7 +58,7 @@ __Например:__
 
 ```haskell
 totient 9 == 6
-totient totient 900000 == 240000
+totient 900000 == 240000
 ```
 
 Тази функция се използва в [RSA алгоритъма](http://en.wikipedia.org/wiki/RSA_%28cryptosystem%29) за критиране, който се среща в HTTPS връзките в уеба.
