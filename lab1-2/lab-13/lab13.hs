@@ -1,7 +1,7 @@
 subsequence :: (Eq a) => [a] -> [a] -> Bool
 subsequence [] _ = True
 subsequence _ [] = False
-subsequence (x:xs) list = (elem x list) && (subsequence xs (dropWhile (/= x) list))
+subsequence (x:xs) list = (elem x list) && (subsequence xs (tail (dropWhile (/= x) list)))
 
 increasing :: (Int -> Int) -> Int -> Int -> Bool
 increasing f a b
