@@ -107,6 +107,7 @@ zeroInsert 116457 -> 10160457
 zeroInsert 777777 -> 70707070707
 zeroInsert 6446 -> 6040406
 zeroInsert 1234 -> 123
+```
 
 ### Subsequence
 
@@ -151,11 +152,11 @@ the result should be a string, containing `n` times `spam`.
 For example:
 
 ```haskell
-prepareMeal(3)
+prepareMeal 3
 "spam"
-prepareMeal(27)
+prepareMeal 27
 "spam spam spam"
-prepareMeal(7)
+prepareMeal 7
 ""
 ```
 
@@ -166,11 +167,11 @@ If number is divisible by 5, add `and eggs` to the result.
 For example:
 
 ```
-prepareMeal(5)
+prepareMeal 5
 "eggs"
-prepareMeal(15)
+prepareMeal 15
 "spam and eggs"'
-prepareMeal(45)
+prepareMeal 45
 "spam spam and eggs"
 ```
 
@@ -179,12 +180,12 @@ __Notice that in the first case, there is no "and". In the rest - there is.__
 #### Test examples
 
 ```
-prepareMeal(5) == "eggs"
-prepareMeal(3) == "spam"
-prepareMeal(27) == "spam spam spam"
-prepareMeal(15) == "spam and eggs"
-prepareMeal(45) == "spam spam and eggs"
-prepareMeal(7) == ""
+prepareMeal 5 == "eggs"
+prepareMeal 3 == "spam"
+prepareMeal 27 == "spam spam spam"
+prepareMeal 15 == "spam and eggs"
+prepareMeal 45 == "spam spam and eggs"
+prepareMeal 7 == ""
 ```
 
 ### Replace number
