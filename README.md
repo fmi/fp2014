@@ -35,7 +35,7 @@ Repository for Functional Programming course for 2nd year Computer Science
 
 Първата ще ви свърши цялата работа за този курс.
 
-Полезни са и материалите от курса по функционално програмиране в университета TU - Delft, воден в [edX](https://courses.edx.org/courses/DelftX/FP101x/3T2014/courseware/33fefb5c08d2476c864788aaba15ae7c/). Освен в `edX` могат да бъдат намерени и в [Github](https://github.com/fptudelft/FP101x-Content).
+Полезни са и материалите от курса по функционално програмиране в университета TU - Delft, воден в [edX](https://courses.edx.org/courses/DelftX/FP101x/3T2014/courseware/33fefb5c08d2476c864788aaba15ae7c/). Освен в edX могат да бъдат намерени и в [Github](https://github.com/fptudelft/FP101x-Content).
 
 ## Функционално Програмиране през 2013
 
