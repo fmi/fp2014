@@ -4,6 +4,12 @@
 ###Разгледани теми
 - алгебрични типове данни
 
+###Препоръчани материали
+- [Declaring Types and Classes - TU-Delft, Part 1](http://delftxdownloads.tudelft.nl/FP101x-FunctionalProgramming/Week5/FP101x-chapter9-part1-video.720.mp4)
+- [Declaring Types and Classes - TU-Delft, Part 2](http://delftxdownloads.tudelft.nl/FP101x-FunctionalProgramming/Week5/FP101x-chapter9-part2-video.720.mp4)
+- [Declaring Types and Classes - TU-Delft, Part 3](http://delftxdownloads.tudelft.nl/FP101x-FunctionalProgramming/Week5/FP101x-chapter9-part3-video.720.mp4)
+- [Functional Programming - 101, TU-Delft](https://github.com/fptudelft/FP101x-Content)
+
 ###Задачи
 - да се дефинира тип `Vector2d`, чийто value конструктор приема 2 реални аргумент - х и у координатите на вектора
 - да се дефинира функция `vectorLength :: Vector2d -> Float`, която връща дължината на даден вектор (`sqrt x^2 + y^2`)
