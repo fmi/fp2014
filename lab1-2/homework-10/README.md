@@ -23,6 +23,14 @@ nextStates [["-", "X", "O"], ["O", "X", "X"], ["O", "-", "O"]] "X" -> [[["X", "X
 nextStates [["O", "X", "O"], ["X", "X", "O"], ["X", "O", "O"]] -> []
 ```
 
+**Hint**: един от възможните начини за решение на задачата е:
+- дефинираме функция `positions :: [[String]] -> [(Int, Int)]`, която по зададено състояние на играта връща индексите на всички позиции, където може да се играе (тези означени с `"-"`)
+- дефинираме функция `mapWithIndex :: (a->Int->b) -> [a] -> [b]`, която работи като стандартния `map`, но подава на функцията освен всеки елемент от списъка и неговия индекс
+- дефинираме функция `mapRows board replaceRowIndex replaceColumnIndex`, в която прилагаме`mapWithIndex` върху `board` - функцията която се подава на `mapWithIndex` е `mapElement row elemRowIndex replaceRowIndex replaceColumnIndex`
+- дефинираме функция `mapElement row elemRowIndex replaceRowIndex replaceColumnIndex`, в която прилагаме `mapWithIndex` върху `row`, а функцията която се подава на `mapWithIndex` е `replaceElement elem elemColumnIndex elemRowIndex replaceRowIndex replaceColumnIndex`,
+- дефинираме функция `replaceElement elem elemColumnIndex elemRowIndex replaceRowIndex replaceColumnIndex`, в която проверяваме дали `(elemColumnIndex == replaceColumnIndex) && (elemRowIndex == replaceRowIndex)`. Ако е така връщаме `player` (тъй като на тази позиция има "-"). В противен случай връщаме `elem` (елементът на тази позиция непроменен)
+- дефинираме `nextStates` като прилагаме `map` върху резултата от извикването на `positions`, а като функция подаваме `mapRows`
+
 ###Задача 2 - intersection
 Да се напише функция `intersection :: [a] -> [a] -> [a]`, която приема като аргументи `2` списъка и връща сечението им.
 
