@@ -12,7 +12,12 @@ data Expression = Plus Int Int | Minus Int Int | Mult Int Int
 
 Например `Plus 5 5` представлява израза `5 + 5`, а `Minus 6 5`, изразът `6 - 5`
 
+
+* Вкарайте типа в типовите класове `Show` и `Eq`. Два израза за еднакви ако са една и съща операция и имат едни и същи операдни.
 * Напишете функция `evaluate :: Expression -> Int`, която взима израз и го пресмята.
+
+Например, ако пресметнем `evaluate (Plus 5 5)`, трябва да получим 10 като резултат.
+
 * Напишете функция `toExpression :: String -> Maybe Expression`, която взима string и се опитва да го превърне в израз. Ако не успее, връща Nothing.
 * Модифицирайте `evaluate` функцията, така че да работи с `Maybe Expression`. Нека тя да връша `Maybe Int`
 
@@ -21,8 +26,22 @@ data Expression = Plus Int Int | Minus Int Int | Mult Int Int
 * `"5 + 5"` трябва да стане `Plus 5 5` или в нашия случай, `Just (Plus 5 5)`
 * `"10 - 5"` става на `Minus 10 5`
 * `"2 * 3"` става на `Mult 2 3`
-* Взики изрази от вида `"{число} {операция + - *} {число}` може да е преведат към `Expression`
+* Взики изрази от вида `"{число} {операция + - *} {число}` може да се преведат към `Expression`
 * Другите трябва да върнат `Nothing`
+
+Примерни използвания:
+
+```haskell
+> toExpression "5 + 5"
+Just (Plus 5 5)
+> toExpression "5 ++ 5"
+Nothing
+> evaluate (toExpression "3 * 10")
+Just 30
+> evaluate (toExpression "Wtf Haskell?")
+Nothing
+```
+
 
 `Maybe` e вграден тип в Haskell, който изглежда по следния начин:
 
