@@ -107,3 +107,13 @@ getBooksLike searchTerm library = filter (isBookLike searchTerm) library
 library :: Library
 library = [Paper "Harry Potter and the Half Blood Prince" 100, Paper "Pragmatic Thinking and Learning" 100,
            Online "The Healthy Programmer" 30 100, Paper "Hogfather" 100]
+
+
+indexOf :: Eq a => a -> [a] -> Maybe Int
+indexOf needle xs = helper needle (index xs)
+  where
+    index xs = zip [0 .. ((length xs) - 1)] xs
+    helper _ [] = Nothing
+    helper needle ((index, x):xs)
+      | needle == x = Just index
+      | otherwise = helper needle xs
