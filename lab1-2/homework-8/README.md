@@ -20,8 +20,8 @@ decode :: String -> Int -> String
 **Примери:**
 
 ```haskell
-encode "crypto" 3 -> "fu|swr"
-decode "fu|swr" 3 -> "crypto"
+encode "crypto" 3 -- "fu|swr"
+decode "fu|swr" 3 -- "crypto"
 ```
 
 ###Задача 2 - Run-Length Encoding
@@ -37,9 +37,9 @@ lengthEncode :: String -> String
 **Примери:**
 
 ```haskell
-lengthEncode "aaabccdefff" -> "3ab2cde3f"
-lengthEncode "abcdef" -> "abcdef"
-lengthEncode "aaaaaaaaaaaabbb" -> "12a3b"
+lengthEncode "aaabccdefff" -- "3ab2cde3f"
+lengthEncode "abcdef" -- "abcdef"
+lengthEncode "aaaaaaaaaaaabbb" -- "12a3b"
 ```
 
 Може да се счита, че входът ще бъде коректен и ще съдържа само букви
