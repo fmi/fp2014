@@ -13,7 +13,7 @@
 **Сигнатура:**
 
 ```haskell
-nextStates :: [[String]] -> String -> [[String]]
+nextStates :: [[String]] -> String -> [[[String]]]
 ```
 
 **Примери:**
