@@ -20,9 +20,9 @@ merge :: [a] -> [a] -> [a]
 **Примери:**
 
 ```haskell
-merge [1, 2, 3] [4, 5, 6] -> [1, 4, 2, 5, 3, 6]
-merge [] [1, 2, 3] -> [1, 2, 3]
-merge [1, 2] [3, 4] -> [1, 3, 2, 4]
+merge [1, 2, 3] [4, 5, 6] -- [1, 4, 2, 5, 3, 6]
+merge [] [1, 2, 3] -- [1, 2, 3]
+merge [1, 2] [3, 4] -- [1, 3, 2, 4]
 ```
 
 Решението да използва `list comprehension`
@@ -40,8 +40,8 @@ hammingDistance :: String -> String -> Int
 **Примери:**
 
 ```haskell
-hammingDistance "orange" "apples" -> 6
-hammingDistance "karolin" "kathrin" -> 3
+hammingDistance "orange" "apples" -- 6
+hammingDistance "karolin" "kathrin" -- 3
 ```
 
 Може да се счита, че входът ще бъде коректен и ще се подават само низове с равна дължина.
@@ -59,7 +59,7 @@ dictionary :: String -> [(String, Int)]
 **Примери:**
 
 ```haskell
-dictionary "The quick brown fox jumps over the lazy dog" -> [("the", 2), ("quick", 1), ("brown", 1), ("fox", 1), ("jumps", 1), ("over", 1), ("lazy", 1), ("dog", 1)]
+dictionary "The quick brown fox jumps over the lazy dog" -- [("the", 2), ("quick", 1), ("brown", 1), ("fox", 1), ("jumps", 1), ("over", 1), ("lazy", 1), ("dog", 1)]
 ```
 
 ###Задача 4 - tfidf
@@ -74,7 +74,7 @@ tfidf :: String -> String -> [String] -> Float
 **Примери:**
 
 ```haskell
-tfidf "the" "the quick brown fox jumps over the lazy dog" ["the quick brown fox jumps over the lazy dog", "the house is painted in white", "This project is falling behind schedule"] -> 1.168
+tfidf "the" "the quick brown fox jumps over the lazy dog" ["the quick brown fox jumps over the lazy dog", "the house is painted in white", "This project is falling behind schedule"] -- 1.168
 ```
 Първият *документ* е 
 
