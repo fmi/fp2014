@@ -2,7 +2,7 @@
 
 В Haskell, дефинираме рекурсивен тип по следния начин:
 
-```data
+```haskell
 data Tree a = Empty | Node a (Tree a) (Tree a)
 ```
 
