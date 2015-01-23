@@ -82,7 +82,7 @@ smallDigits 513 4 -> 7507
 ##Задача 4 - Алгебрични типове
 Дефинирани са следните типове:
 ```haskell
-data Answer = Yes Int | No Int | Unknown
+data Answer = Yes Int | No Int | Unknown deriving (Show, Eq)
 type Test = [Answer]
 type Exam = [Test]
 ```
