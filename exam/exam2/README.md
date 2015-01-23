@@ -107,10 +107,11 @@ Unknown
 
 ##Примерни данни за тестване:
 ```haskell
--- testScore -> 5 - 3 + 0 + 2 - 1 + 3 + 2 - 1 + 0 = 7
+-- testScore for exampleTest1 -> 5 - 3 + 0 + 2 - 1 + 3 + 2 - 1 + 0 = 7
 exampleTest1 :: Test
 exampleTest1 = [Yes 5, No 3, Unknown, Yes 2, No 1, Yes 3, Yes 2, No 1, Unknown]
--- testScore -> 10
+
+-- testScore for exampleTest2 -> 10
 exampleTest2 :: Test
 exampleTest2 = [Yes 5, Yes 5, Yes 5, No 5, Unknown]
 --  averageScore -> 8.5
