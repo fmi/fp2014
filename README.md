@@ -17,12 +17,12 @@ Repository for Functional Programming course for 2nd year Computer Science
 
 ## DrRacket
 
-Програма може да изтеглите от тук - http://racket-lang.org/
+IDE-то за DrRacket може да изтеглите от тук - http://racket-lang.org/
 
 ## Haskell - Платформа
 
 * За платформа ще използваме Haskell Platform - https://www.haskell.org/platform/
-* За Haskell няма да имаме среда за разработка, подобна на Dr.Racket. Поради тази причина ви препоръчваме да се въоражите с текстов редактор по избор - [Vim](http://en.wikipedia.org/wiki/Vim_%28text_editor%29) / [Sublime](http://www.sublimetext.com/3) / [Atom](https://atom.io/)
+* За Haskell няма да имаме среда за разработка, подобна на Dr.Racket. Поради тази причина ви препоръчваме да се въоръжите с текстов редактор по избор - [Vim](http://en.wikipedia.org/wiki/Vim_%28text_editor%29) / [Sublime](http://www.sublimetext.com/3) / [Atom](https://atom.io/)
 * [В repository-то на курса за 2013-та има много добро обяснение за това как да инсталирате и да работите с платформата на Haskell.](https://github.com/IvanIvanov/fp2013/wiki/%D0%98%D0%BD%D1%81%D1%82%D0%B0%D0%BB%D0%B0%D1%86%D0%B8%D1%8F-%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-Haskell-Platform)
 
 ## Haskell - Материали
