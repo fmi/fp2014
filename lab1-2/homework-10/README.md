@@ -19,8 +19,8 @@ nextStates :: [[String]] -> String -> [[String]]
 **Примери:**
 
 ```haskell
-nextStates [["-", "X", "O"], ["O", "X", "X"], ["O", "-", "O"]] "X" -> [[["X", "X", "O"], ["O", "X", "X"], ["O", "-", "O"]], [["-", "X", "O"], ["O", "X", "X"], ["O", "X", "O"]]]
-nextStates [["O", "X", "O"], ["X", "X", "O"], ["X", "O", "O"]] -> []
+nextStates [["-", "X", "O"], ["O", "X", "X"], ["O", "-", "O"]] "X" -- [[["X", "X", "O"], ["O", "X", "X"], ["O", "-", "O"]], [["-", "X", "O"], ["O", "X", "X"], ["O", "X", "O"]]]
+nextStates [["O", "X", "O"], ["X", "X", "O"], ["X", "O", "O"]] -- []
 ```
 
 **Hint**: един от възможните начини за решение на задачата е:
@@ -44,9 +44,9 @@ intersection :: (Eq a) => [a] -> [a] -> [a]
 **Примери:**
 
 ```haskell
-intersection [1, 2, 3, 4, 5] [4, 5, 6, 7, 8] -> [4, 5]
-intersection [] [1, 2, 3] = []
-intersection [1, 2, 3] [4, 5, 6] = []
+intersection [1, 2, 3, 4, 5] [4, 5, 6, 7, 8] -- [4, 5]
+intersection [] [1, 2, 3] -- []
+intersection [1, 2, 3] [4, 5, 6] -- []
 ```
 
 ###Задача 3 - difference
@@ -61,7 +61,7 @@ difference :: (Eq a) => [a] -> [a] -> [a]
 **Примери:**
 
 ```haskell
-difference [1, 2, 3, 4, 5] [4, 5, 6, 7, 8] -> [1, 2, 3]
-difference [] [1, 2, 3] -> []
-difference [1, 2, 3] [4, 5, 6] -> [1, 2, 3]
+difference [1, 2, 3, 4, 5] [4, 5, 6, 7, 8] -- [1, 2, 3]
+difference [] [1, 2, 3] -- []
+difference [1, 2, 3] [4, 5, 6] -- [1, 2, 3]
 ```
